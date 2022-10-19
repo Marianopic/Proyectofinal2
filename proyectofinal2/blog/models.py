@@ -11,8 +11,7 @@ class Autor(models.Model):
     apellido = models.CharField(max_length=30)
     profesion = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.nombre
+
 
 
 class Articulo(models.Model):
@@ -21,8 +20,6 @@ class Articulo(models.Model):
     texto = models.CharField(max_length=1000)
     fecha = models.DateField(null=True)
 
-    def __str__(self):
-        return self.titulo
 
 
 class Seccion(models.Model):
@@ -31,5 +28,4 @@ class Seccion(models.Model):
 
     nombre = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.nombre
+
